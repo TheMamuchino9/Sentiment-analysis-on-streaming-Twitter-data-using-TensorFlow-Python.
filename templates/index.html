@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Herramienta de modelado</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+
+<section id="seccion1" class="pt-4 pb-0">
+<div class="container">
+    <div class= "row">
+      <div class="col col-md-8 offset-md-2">
+        <form action="/add" method="post">
+          <div class="form row">
+            <div class="mb-3 form-group col-12 col-md-6">
+               <label for="value1">Keyword:</label>
+               <input type="text" name="keyword" class="form-control" placeholder="">
+            </div>
+            <div class="mb-3 col-12 col-md-6">
+               <label for="value2">Number of tweets:</label>
+               <input type="text" name="number" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form row">
+            <div class="mb-3 col-12 col-md-6">
+               <button class="btn btn-primary mb-4" type="submit" name="submit" value="add">Submit</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="seccion2">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col btn btn-primary">
+                  Tweet
+                </div>
+                 <div class="col btn btn-warning">
+                    Sentiment
+                </div>
+                 <div class="col btn btn-light">
+                    Val#5
+                </div>
+            </div>
+            </div>
+        {% for msg in t %}
+	    <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    {{msg}}
+                    <br><br>
+                </div>
+                <div class="col">
+                    {{x[loop.index0]}}
+                </div>
+                 <div class="col">
+                     {{s[loop.index0]}}
+                </div>
+            </div>
+	    </div>
+        {% endfor %}
+	    </div>
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
