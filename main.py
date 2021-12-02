@@ -18,9 +18,9 @@ class Mystreamer(Stream):
     def on_connect(self):
         self.i = 0
         global mensaje, sentimiento, estatus
-        mensaje = ['mensaje']
-        sentimiento = ['1']
-        estatus = ['0']
+        mensaje = []
+        sentimiento = []
+        estatus = []
 
     def on_data(self, raw_data):
         self.i = self.i + 1
