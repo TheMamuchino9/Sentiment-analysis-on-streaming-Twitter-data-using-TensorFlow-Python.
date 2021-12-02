@@ -5,7 +5,8 @@ In this project I trained a Machine Learning model in TensorFlow for Natural Lan
 
 You can search for a keyword and set the number of tweets that are going to be shown, and the machine learning model will say wheter the tweet is positive or negative. 
 
-![image](https://user-images.githubusercontent.com/86535567/144332652-0475d493-169a-425c-aebb-aabeb05d6bfb.png)
+![image](https://user-images.githubusercontent.com/86535567/144333413-34e9a350-4f6e-4a58-9152-83e8487679cc.png)
+
 
 You can see how I connected to the Twitter API and how I trained the machine learning model in this [blog](https://medium.com/@mamuchino9/machine-learning-sentiment-analysis-on-streaming-twitter-data-using-tensorflow-python-6edfd540e5ed) 
 
